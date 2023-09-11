@@ -7,30 +7,29 @@ import { Icon } from "astro-icon";
 */
 const socialLinks = [
 	{
-		name: "mdi:github",
+		name: "mdi:github-box",
 		friendlyName: "Github",
-		link: "https://github.com/chrismwilliams/astro-cactus",
-	},
-	{
-		name: "mdi:mastodon",
-		friendlyName: "Mastodon",
-		link: "#",
+		link: "https://github.com/linpep",
 	},
 	{
 		name: "mdi:linkedin",
 		friendlyName: "LinkedIn",
-		link: "#",
+		link: "https://www.linkedin.com/in/tonyvt/",
 	},
 	{
-		name: "mdi:email",
+		name: "mdi:youtube",
+		friendlyName: "youtube",
+		link: "https://www.youtube.com/@peppersecurity",
+	},
+	{
+		name: "mdi:gmail",
 		friendlyName: "email",
-		link: "mailto:astro-cactus@chriswilliams.dev",
+		link: "mailto:tony.iso@proton.me",
 	},
 ];
 ---
 
 <div class="flex flex-wrap items-end gap-x-4">
-	<p>Find me on</p>
 	<ul class="flex flex-1 items-center gap-x-2 sm:flex-initial">
 		{
 			socialLinks.map(({ link, name, friendlyName }) => {
