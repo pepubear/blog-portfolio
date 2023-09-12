@@ -31,9 +31,10 @@ const url = new URL(Astro.request.url);
 
 <header
 	id="main-header"
-	class="group relative mb-28 flex items-center sm:ps-[4.5rem]"
+	class="group relative mb-28 flex items-center"
 	transition:persist
 >
+<img src="/src/assets/linux.png" alt="Description of the image" width="70">
 	<div class="flex sm:flex-col">
 		<a
 			href="/"
@@ -41,7 +42,7 @@ const url = new URL(Astro.request.url);
 			aria-current={url.pathname === "/" ? "page" : false}
 		>
 
-			<span class="text-xl font-bold sm:text-2xl">WIP</span>
+			<span class="text-xl font-bold sm:text-2xl">Pepper_Security</span>
 		</a>
 		<nav
 			id="navigation-menu"

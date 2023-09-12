@@ -1,5 +1,5 @@
 ---
-title: "Cyber Learn 2023 "
+title: "Cyber Learn 2023"
 publishDate: "12 April 2023"
 description: "A High School Cybersecurity event held in Tampa, FL"
 tags: ["event", "cybersecurity"]
@@ -14,6 +14,7 @@ Another challenge we participated in was a NICE Challenge regarding Active Direc
 I would also like to thank Seeyew Mo for coming in today and speaking about the great opportunities we have as a generation in Cybersecurity. It truely is a life-changing oppurtunity to be where I am today.
 
 ## The Practice
+
 The Nice Challenge [Boot Camp](https://pepsec.com/boot-camp) mentioned in my blog has tremendously helped my team! My teammates and I also practiced creating a professional incident response executive summary based on an assortment of cybersecurity incidents. Some of these incidents include ransomware, email database leaks, social engineering, and more.
 
 #### Here is an image of the event!
