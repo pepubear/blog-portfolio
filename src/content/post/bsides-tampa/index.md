@@ -8,6 +8,7 @@ tags: ["cybersecurity", "event"]
 As this is the first Cybersecurity convention I have attended, I am not quite sure what to base my opinions on when evaluating BSides Tampa. However, I can confidently say that this was an amazing experience, offering educational and entertaining knowledge into the professional world of Cybersecurity.
 
 ## The BSides Experience
+
 The conference featured a wide variety of talks, workshops, and interactive sessions covering various Cybersecurity topics, all led by experienced professionals and researchers. Some of the keynote speakers I listened to were Beau Bullock, Bryson Bort, Christina Shannon, Erich Kron, Ken Westin, and Terrance Cooley. These business leaders discussed pivotal topics related to this new generation of Cybersecurity, such as Bryson Bort's speech on the community factor of Cybersecurity and the prioritization we should have on bringing people together.
 
 Apart from talks and workshops, I also attended the vendor expo where leading companies like Reliaquest, AppOmni, NorthStar, Guidepoint, BishopFox, KnowBe4, and many more in the Cybersecurity industry showcased their latest products and services.
@@ -16,6 +17,6 @@ Finally, I was able to have my resume reviewed by a few professionals and was gi
 
 Here are just a few images from the event!
 
-<img src="/src/content/post/bsides-tampa/bsides0.jpg" alt="" class="full">
-<img src="/src/content/post/bsides-tampa/bsides1.jpg" alt="" class="full">
-<img src="/src/content/post/bsides-tampa/bsides2.jpg" alt="" class="full">
+<img src="/public/bsides0.jpg" alt="" class="full">
+<img src="/public/bsides1.jpg" alt="" class="full">
+<img src="/public/bsides2.jpg" alt="" class="full">
