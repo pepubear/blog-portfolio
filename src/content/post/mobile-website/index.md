@@ -21,6 +21,5 @@ nano /var/www/html/index.html
 
 ## Inside my terminal
 
-<img src="/src/content/post/mobile-website/mobileshell.png" alt="" class="full" style="width:300px;">
-
-<img src="/src/content/post/mobile-website/mobilehtmlcode.png" alt="" class="full">
+![terminal](/src/content/post/mobile-website/mobileshell.png)
+![htmlcode](/src/content/post/mobile-website/mobilehtmlcode.png)

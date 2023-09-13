@@ -11,15 +11,31 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 
 const cactusTech: Array<{ title: string; desc: string; href: string }> = [
 	{
-		title: "My Youtube Channel",
+		title: "Youtube",
 		desc: "Discover some Cybersecurity, Blog, and General Videos",
 		href: "https://www.youtube.com/@peppersecurity",
 	},
 	{
-		title: "Astro Assets",
-		desc: "Built-in optimized asset support.",
-		href: "https://docs.astro.build/en/guides/assets/",
+		title: "LinkedIn",
+		desc: "Connect with my professional side!",
+		href: "https://www.linkedin.com/in/tonyvt/",
 	},
+	{
+		title: "Twitter",
+		desc: "Check out my Twitter!",
+		href: "https://twitter.com/pepsecurity",
+	},
+	{
+		title: "Github",
+		desc: "Check out my Gits, Repos, Etc.",
+		href: "https://github.com/linpep",
+	},
+	{
+		title: "LinkedIn",
+		desc: "Connect with my professional side!",
+		href: "https://www.linkedin.com/in/tonyvt/",
+	},
+	
 ];
 ---
 
@@ -30,9 +46,8 @@ const cactusTech: Array<{ title: string; desc: string; href: string }> = [
 			I am currently a Cybersecurity student developing my skills in Pen-Testing, Development, Security Research, Network Administration, Systems Administration, Cloud Security and more!
 		</p>
 		<p>
-			j
+			I currently am the program leader in my Cybersecurity program at my High School! I also am proud to say and call myself a Cybersecurity instructor and mentor of sorts.
 		</p>
-		<SocialList />
 	</section>
 	<section aria-label="Blog post list" class="mt-16">
 		<h2 class="title mb-4 text-xl">// Blog Posts</h2>
@@ -64,6 +79,7 @@ const cactusTech: Array<{ title: string; desc: string; href: string }> = [
 					</li>
 				))
 			}
+			
 		</ul>
 	</section>
 </PageLayout>
