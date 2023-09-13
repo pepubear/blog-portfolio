@@ -17,6 +17,6 @@ Finally, I was able to have my resume reviewed by a few professionals and was gi
 
 Here are just a few images from the event!
 
-<img src="/public/bsides0.jpg" alt="" class="full">
+<img src="/public/bsides0.jpg" alt="bsides0">
 <img src="/public/bsides1.jpg" alt="" class="full">
 <img src="/public/bsides2.jpg" alt="" class="full">
