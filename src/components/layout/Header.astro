@@ -2,7 +2,8 @@
 import ThemeToggle from "../ThemeToggle.astro";
 import Search from "../Search.astro";
 import { menuLinks } from "@/site-config";
-
+import linuxPfp from "@/assets/linux.png";
+import { Image } from "astro:assets";
 const url = new URL(Astro.request.url);
 ---
 
@@ -34,7 +35,12 @@ const url = new URL(Astro.request.url);
 	class="group relative mb-16 flex items-center"
 	transition:persist
 >
-<img src="/public/linux.png" alt="linux" width="70">
+	<Image
+		src={linuxPfp}
+		alt="A cartoon cactus looking at the 'Astro.build' logo"
+		style="width:70px;"
+		loading="eager"
+	/>
 	<div class="flex sm:flex-col">
 		<a
 			href="/"
