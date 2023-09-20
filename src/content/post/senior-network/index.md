@@ -96,5 +96,5 @@ Some of the future solutions and labs include:
 
 ### Here are some images of the network!
 
-![seniorlab](/src/content/post/senior-network/seniornetwork1.jpg)
-![seniorlab](/src/content/post/senior-network/seniornetwork2.jpg)
+![seniorlab](https://raw.githubusercontent.com/linpep/blog-portfolio-images/ab54485e05d23502422db4541abfae43e736f532/seniornetwork1.jpg)
+![seniorlab](https://raw.githubusercontent.com/linpep/blog-portfolio-images/ab54485e05d23502422db4541abfae43e736f532/seniornetwork2.jpg)

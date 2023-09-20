@@ -21,5 +21,5 @@ nano /var/www/html/index.html
 
 ## Inside my terminal
 
-![terminal](/src/content/post/mobile-website/mobileshell.png)
-![htmlcode](/src/content/post/mobile-website/mobilehtmlcode.png)
+![terminal](https://raw.githubusercontent.com/linpep/blog-portfolio-images/ab54485e05d23502422db4541abfae43e736f532/mobileshell.png)
+![htmlcode](https://raw.githubusercontent.com/linpep/blog-portfolio-images/ab54485e05d23502422db4541abfae43e736f532/mobilehtmlcode.png)

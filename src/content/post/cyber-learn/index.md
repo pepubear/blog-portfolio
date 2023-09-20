@@ -19,4 +19,4 @@ The Nice Challenge [Boot Camp](https://pepsec.com/boot-camp) mentioned in my blo
 
 #### Here is an image of the event!
 
-![cyberlearn](/src/content/post/cyber-learn/cyberlearn2023.jpg)
+![cyberlearn](https://raw.githubusercontent.com/linpep/blog-portfolio-images/ab54485e05d23502422db4541abfae43e736f532/cyberlearn2023.jpg)

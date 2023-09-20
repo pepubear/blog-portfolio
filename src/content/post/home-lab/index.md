@@ -25,4 +25,4 @@ In the future of my Proxmox server, I plan to add/ build additional services lik
 
 ## Photos
 
-![proxmoxdashboard](/src/content/post/home-lab/proxmox.png)
+![proxmoxdashboard](https://raw.githubusercontent.com/linpep/blog-portfolio-images/ab54485e05d23502422db4541abfae43e736f532/proxmox1.png)

@@ -17,6 +17,6 @@ Finally, I was able to have my resume reviewed by a few professionals and was gi
 
 Here are just a few images from the event!
 
-![bsides](/src/content/post/bsides-tampa/bsides0.jpg)
-![bsides](/src/content/post/bsides-tampa/bsides1.jpg)
-![bsides](/src/content/post/bsides-tampa/bsides2.jpg)
+![bsides0](https://raw.githubusercontent.com/linpep/blog-portfolio-images/ab54485e05d23502422db4541abfae43e736f532/bsides0.jpg)
+![bsides1](https://raw.githubusercontent.com/linpep/blog-portfolio-images/ab54485e05d23502422db4541abfae43e736f532/bsides1.jpg)
+![bsides2](https://raw.githubusercontent.com/linpep/blog-portfolio-images/ab54485e05d23502422db4541abfae43e736f532/bsides2.jpg)
