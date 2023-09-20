@@ -19,4 +19,4 @@ Overall I am very proud that our first project was a success and I am excited to
 
 #### Here is some of the lab material our students used:
 
-![lab material](/src/content/post/active-directory-lab/adlab.jpg)
+![lab material](https://raw.githubusercontent.com/linpep/blog-portfolio-images/ab54485e05d23502422db4541abfae43e736f532/adlab.jpg)
