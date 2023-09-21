@@ -2,7 +2,7 @@
 title: "Our Linux Boot Camp"
 publishDate: "28 Feburary 2023"
 description: "Boot camp preperation for Tampa's Cyber Day Competition"
-tags: ["Linux", "lab"]
+tags: ["linux", "lab"]
 ---
 
 With the vast amount of technology our Cybersecurity classroom had, it was a waste to just leave it in the dust. So as result, [Eric J](https://35th.io), I, and a few students were tasked to create and implement a Linux based network where our students can perform the many labs we participate in. This lab consisted of the use and configuration of Cisco Switches, Optiplex Desktops, and even some Raspberry Pi's.

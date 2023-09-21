@@ -1,8 +1,8 @@
 ---
-title: "Bsides Tampa"
+title: "Bsides Security Conference Tampa 2023"
 publishDate: "01 April 2023"
 description: "My Trip to Bsides Tampa 2023, a Cybersecurity Convention"
-tags: ["cybersecurity", "event"]
+tags: ["cybersecurity", "events"]
 ---
 
 As this is the first Cybersecurity convention I have attended, I am not quite sure what to base my opinions on when evaluating BSides Tampa. However, I can confidently say that this was an amazing experience, offering educational and entertaining knowledge into the professional world of Cybersecurity.

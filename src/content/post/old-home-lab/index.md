@@ -1,8 +1,8 @@
 ---
-title: "My Old Proxmox Lab "
+title: "My (Old) Proxmox Lab "
 publishDate: "05 January 2023"
 description: "My old, original, self-hosted Proxmox homelab environment!"
-tags: ["linux", "proxmox", "lab"]
+tags: ["linux", "proxmox", "homelab"]
 ---
 
 When it came to selecting hardware, I struggled to obtain a server or even a desktop computer. Fortunately, I was presented with a unique opportunity to receive an OptiPlex 7070 as part of my Cybersecurity program. Since acquiring this hardware, it has been a game-changer in my learning experience. I am amazed at how it has accelerated my knowledge in Cybersecurity, far beyond what I thought was possible.
@@ -19,7 +19,7 @@ I also suggest [Learn Linux TV's](https://www.youtube.com/@LearnLinuxTV) as an e
 
 As of my applications that I currently have configured on Proxmox, I run TrueNAS, OpenVPN, Game Servers, Windows Server, and Cloudflare Tunnels. However, I mainly use my network for a testing lab. I find it incredibly easy to deploy and delete Virtual Machines for Network, and even Pen-Testing needs.
 
-## Future Ideas
+## Future Plans
 
 In the future of my Proxmox server, I plan to add/ build additional services like SearXNG, Sync-Thing, Plex, and even pfSense!
 

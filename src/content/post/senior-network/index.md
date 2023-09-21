@@ -2,7 +2,7 @@
 title: "Kraken Security Senior Network"
 publishDate: "25 June 2023"
 description: "In-depth description of the Kraken Sec. Lab Environment"
-tags: ["network", "linux", "proxmox"]
+tags: ["networking", "linux", "proxmox", "active directory"]
 ---
 
 During this past junior year, I was given a great opportunity to start the framework and evaluation of the soon-to-be senior network with a fellow classmate. I've always wanted to do hands-on networking projects, beginning with my Proxmox home lab environment. However, with this project, we can implement a solution that teaches both my partner and me the inner workings of a real, small/medium-sized business' internal network.
@@ -22,7 +22,7 @@ Some of the software we used to troubleshoot and pen-test include:
 - Enum4Linux, enumerating SMB information for our NAS solution
 - Wireshark, discovering device broadcasts and verifying IP address/ DNS queries and requests
 
-## Detailed Information of the Solutions
+## // Detailed Information of our Solutions
 
 ---
 
@@ -70,7 +70,7 @@ Our uses for Graylog include:
 - Allows our team to diagnose any issues within our network
 - Email notification management
 
-## Future Plans for the Senior Network
+## // Future Plans for the Senior Network
 
 ---
 
