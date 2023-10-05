@@ -65,19 +65,19 @@ The Cloudflare Tunnels Service utilizes an already purchased web domain to route
 
 You may be thinking that my environment can be easily hacked due to it's open nature, however, you'd be wrong! Cloudflare Tunnels provides a very easy to configure 2FA email-based authentication for my services. Allowing only ME to access my resources.
 
-#### SSH Kali Tunnel
-
-Utilizing a specially configured Cloudflare tunnel, I am able to render an SSH session via a web browser, Allowing me to access my Kali machine
-
-Website to access my Kali Tunnel: kali.< >.cf
-![sshkali](https://raw.githubusercontent.com/linpep/blog-portfolio-images/f27f8c23155561bbba820b80d3c1517c3e2bdfce/sshkali.png)
-
 #### Proxmox Web Tunnel
 
 Just as an On-Prem Hypervisor Engineer would configure Proxmox (locally), I can mitigate this crutch and access the same console through my domain anywhere!
 
 Website to access my Proxmox Environent: px.< >.cf
 ![proxmoxdashboard](https://raw.githubusercontent.com/linpep/blog-portfolio-images/main/proxmoxdashboard.png)
+
+#### SSH Kali Tunnel
+
+Utilizing a specially configured Cloudflare tunnel, I am able to render an SSH session via a web browser, Allowing me to access my Kali machine
+
+Website to access my Kali Tunnel: kali.< >.cf
+![sshkali](https://raw.githubusercontent.com/linpep/blog-portfolio-images/f27f8c23155561bbba820b80d3c1517c3e2bdfce/sshkali.png)
 
 ### OpenVPN Server/ Containers
 
