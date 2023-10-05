@@ -195,6 +195,14 @@ Shoutout, again, to [Lawrence Systems](https://www.youtube.com/watch?v=rtfj6W5X0
 - Proxmox Virtual Environment
 - TrueNAS
 
+### PiHole DNS w/ CasaOS
+
+For all my active devices on my network, I've configured a PiHole docker container within the CasaOS suite on a Ubuntu Server 22.02 Linux Virtual Machine. 
+
+All this DNS server does is strictly adblocking and some local domain shenanigans. Allowing my router to take the domain (router.local) and my Proxmox node to take the domain (prox.local).
+
+As for adblocking, it takes maintained repositories of known advertising domains and filters them to not render on any browser, allowing all my devices from an Amazon Show, to my iPhone, to my Computer to block 80% of all ads.
+
 ### Future Plans
 
 Truthfully, my future plans revolve strictly with the addition of new hardware and technology. However, I've saved up a couple thousand dollars that I could use a portion of into my environment!
