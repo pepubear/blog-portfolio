@@ -1,5 +1,5 @@
 ---
-title: "My (Old) Proxmox Lab "
+title: "My [Old] Home Lab "
 publishDate: "05 January 2023"
 description: "My old, original, self-hosted Proxmox homelab environment!"
 tags: ["linux", "proxmox", "homelab"]

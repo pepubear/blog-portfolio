@@ -1,5 +1,5 @@
 ---
-title: "Our Linux Boot Camp"
+title: "Linux Boot Camp"
 publishDate: "28 Feburary 2023"
 description: "Boot camp preperation for Tampa's Cyber Day Competition"
 tags: ["linux", "lab"]

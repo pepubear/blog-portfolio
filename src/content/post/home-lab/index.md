@@ -1,5 +1,5 @@
 ---
-title: "My Cybersecurity Home Lab"
+title: "My New Home Server Lab"
 publishDate: "5 October 2023"
 description: "In-depth and more advanced than my previous home-lab rendition"
 tags: ["linux", "proxmox", "homelab"]
@@ -81,7 +81,7 @@ Website to access my Kali Tunnel: kali.< >.cf
 
 ### OpenVPN Server/ Containers
 
-When it comes to establishing a direct and private connection to my home network, a VPN  is there to solve that issue. With that, I also can't rely on a direct tunnel connection to many of my solutions, especially when considering SMB incompatibilities with Cloudflare Tunnels. So at the end of the day my pick in a VPN Solution: OpenVPN!
+When it comes to establishing a direct and private connection to my home network, a VPN is there to solve that issue. With that, I also can't rely on a direct tunnel connection to many of my solutions, especially when considering SMB incompatibilities with Cloudflare Tunnels. So at the end of the day my pick in a VPN Solution: OpenVPN!
 
 There are many forms of documentation out there assisting with the installation of OpenVPN, but what I found most helpful was [Virtualize Everything](https://www.youtube.com/watch?v=bSobiiufLQk)'s quick and simply explained OpenVPN LXC Container installation.
 
@@ -197,7 +197,7 @@ Shoutout, again, to [Lawrence Systems](https://www.youtube.com/watch?v=rtfj6W5X0
 
 ### PiHole DNS w/ CasaOS
 
-For all my active devices on my network, I've configured a PiHole docker container within the CasaOS suite on a Ubuntu Server 22.02 Linux Virtual Machine. 
+For all my active devices on my network, I've configured a PiHole docker container within the CasaOS suite on a Ubuntu Server 22.02 Linux Virtual Machine.
 
 All this DNS server does is strictly adblocking and some local domain shenanigans. Allowing my router to take the domain (router.local) and my Proxmox node to take the domain (prox.local).
 
