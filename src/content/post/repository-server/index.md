@@ -7,34 +7,40 @@ tags: ["linux", "proxmox", "homelab"]
 
 ## Introduction
 
-One of core functions of a network is the updating and patching process. This process is critical when it comes to the functional process of the network stack, prevention of cybersecurity events, and (don't forget now) the compliance portion.
+One of core functions of a network is the updating and patching process. This process is critical when it comes to the functionality of a network stack, the prevention of cybersecurity events, and (don't forget) the compliance portion.
 
-The main way I manage auto updating and patching in my [Proxmox Server Environment](https://pepsec.com/posts/home-lab/) is through known software such as:
+The main way I manage auto updating and patching in my [Proxmox Server Environment](https://pepsec.com/posts/home-lab/) is through well-known software such as:
 
 - Apt Mirror
 - Unattended Upgrades
 - Nginx
 - Crontab
 
-Since this is a Repository server, HTTP hosting through **Nginx** will also need to be installed alongside Apt-Mirror and Unattended-Upgrades. This will allow all servers on the network to read and download any packages just like a normal repository.
+Since this is a Repository server, HTTP web hosting with **Nginx** will also need to be installed alongside **Apt-Mirror**. This will allow all servers and computers on the network to read and download any packages just like a normal Linux repository.
 
-There are many different software and configurations that I use in this implementation but I will just go over the core neccesities for the sake of time and understanding!
+There are many different software and configurations that I use in this implementation but I will just go over the core neccesities for the sake of time!
 
-### Installing
+### Installing Packages
 
-All you have to do is just install two packages!
+For this configuration, you'll only need to worry about three total packages for your Server and Clients!
 
+**Repository Server:**
 ```bash
-sudo apt install apt-mirror unattended-upgrades nginx
+sudo apt install apt-mirror nginx
+```
+
+**Clients:**
+```bash
+sudo apt install unattended-upgrades
 ```
 
 ## Apt Mirror
 
-Apt Mirror is the core functionality of this configuration. Apt Mirror provides the ability to clone remote repository (with relative ease) and implement a local repository that can be descriptively configured and managed to allow your network to recieve the correct packages at all times!
+Apt Mirror is the core functionality of this configuration. Apt Mirror provides the ability to clone a remote repository (with relative ease) and implement a local repository that can be descriptively configured and managed to allow your network to recieve the correct packages at all times!
 
 ### Specifications
 
-You will need an incredible amount of storage capacity and hardware specifications. At least **500GB** of Solid State Storage, **24G** of RAM, and **8** CPU Cores.
+You will need a solid amount of storage capacity and hardware specifications. At least/ around **500GB** of Solid State Storage, **24G** of RAM, and **8** CPU Cores.
 
 These repositories get huge and it takes alot of time to determine which repositories you will need for your network. It takes alot of research too and I am hoping this blog assists with that need a whole ton!
 
@@ -42,7 +48,7 @@ These repositories get huge and it takes alot of time to determine which reposit
 
 Apt Mirror comes with a basic configuration file contained in `/etc/apt/mirrors.list`
 
-In this configuration I am utilizing **only** Ubuntu Lunar 23.04 **and** Rolling Kali Linux. That is all I need for my environment, and it is the bare minumum that I can actually support.
+In this configuration, I am utilizing only **Ubuntu Lunar 23.04** and **Rolling Kali Linux**. That is all I need for my environment, and it is the bare minumum that I can actually support.
 
 Take note of the Lunar and Kali apt keywords:
 
@@ -98,6 +104,8 @@ The naming scheme may seem a little complicated, but it shouldn't be too hard to
 
 When running Apt-Mirror I use a **crontab** configuration which I will explain later in this blog, but to run Apt-Mirror manually just use the command `sudo apt-mirror`.
 
+**CAUTION:** This may take a WHILE
+
 ```bash
 repo@repository:~$ sudo apt-mirror
 [sudo] password for repo:
@@ -149,7 +157,7 @@ Post Mirror script has completed. See above output for any possible errors.
 
 Crontab allows me to automatically run all the scripts I want with any sort of modification to allow myself to be assured my installation is running correctly all the time. This concept is heavily adopted by large and small enterprises in their server administration needs!
 
-If you noticed, my Crontab configuration will also include the "**/var/spool/apt-mirror/var/postmirror.sh**" script to clean up Apt-Mirror.
+If you noticed, my Crontab configuration will also include the "**/var/spool/apt-mirror/var/clean.sh**" script to clean up Apt-Mirror.
 
 ```bash
 0 3 * * * /usr/bin/apt-mirror 2>&1 | tee -a /var/log/apt-mirror.log | logger -t apt-mirror
@@ -158,7 +166,7 @@ If you noticed, my Crontab configuration will also include the "**/var/spool/apt
 
 **First Line (Apt Mirroring):**
 
-- 0 3 \* \* \*: This specifies the schedule for the cron job. In this case, the job runs at 3:00 AM daily (0 minutes, 3 hours).
+- `0 3 \* \* \*`: This specifies the schedule for the cron job. In this case, the job runs at 3:00 AM daily (0 minutes, 3 hours).
 - /usr/bin/apt-mirror: The command to execute. In this instance, it runs the apt-mirror tool, which mirrors Debian or Ubuntu repositories locally.
 - 2>&1: Redirects both standard output and standard error to the next command.
 - tee -a /var/log/apt-mirror.log: Appends the output to the specified log file /var/log/apt-mirror.log.
@@ -166,7 +174,7 @@ If you noticed, my Crontab configuration will also include the "**/var/spool/apt
 
 **Second Line (Apt Mirror Cleanup):**
 
-- 0 4 \* \* \*: Scheduled at 4:00 AM daily.
+- `0 4 \* \* \*`: Scheduled at 4:00 AM daily.
 - /var/spool/apt-mirror/var/clean.sh: Executes the cleanup script for the apt-mirror, responsible for removing obsolete files and maintaining the mirror efficiently.
 - 2>&1: Redirects both standard output and standard error to the next command.
 - tee -a /var/log/apt-mirror-clean.log: Appends the output to the specified log file /var/log/apt-mirror-clean.log.
