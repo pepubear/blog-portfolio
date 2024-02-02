@@ -1,5 +1,5 @@
 ---
-title: "My New Home Server Lab"
+title: "My Home Network Environment"
 publishDate: "5 October 2023"
 description: "In-depth and more advanced than my previous home-lab rendition"
 tags: ["linux", "proxmox", "homelab"]
@@ -35,7 +35,7 @@ Huge props to creators like [Learn Linux TV](https://www.youtube.com/@LearnLinux
 
 The Open-Source nature of Proxmox provided absolutely endless oppurtunity to whatever I need to use it for, whether it come to intricate High-Availability networks with an in-built SIEM and 24/7 logging, or just a box to spin up bridged Virtual Machines and Containers. Mwah! It was perfect.
 
-Hell, I even utilize this plaform in our [Cybersecurity Program](https://pepsec.com/posts/senior-network/)'s infrastucture to provide the most ease, cost-efficient, and compatible network implementation.
+Hell, I even utilize this platform in our [Cybersecurity Program](https://pepsec.com/posts/senior-network/)'s infrastructure to provide the most ease, cost-efficient, and compatible network implementation.
 
 Here is a list of my services that I will go ahead and detail later in this blog.
 
@@ -48,14 +48,60 @@ Here is a list of my services that I will go ahead and detail later in this blog
 - Windows AD Virtual Environment
 - TrueNAS File Sharing, SMB, NFS
 - Graylog System Logging Server
-- Certificate Authentation Server
+- Certificate Authentication Server
 - Splunk SIEM Environment
 - CasaOS Open-Source Cloud System
 - PiHole DNS Ad-blocker
 
-## Servers and Services
+## Windows Servers and Services
 
 ---
+
+### Windows Virtual Environment
+
+Creating a Windows virtual environment was quite a difficult process in my experience. Numerous times I faced some incompatibilities, software instabilities, and more throughout the implementation period. But support for such problems was thankfully abundant!
+
+However when diving into the Windows system itself, it is common knowledge just how many vulnerable vectors there are on such a system. But, it is these vulnerabilities and known technologies that Windows utilizes that should encourage anyone to create a Windows-based Virtual Network.
+
+Some critical Windows-based services and solutions I often am learning include Active Directory, Kerberos, RPC, Windows Remote Management, etc.
+
+#### Active Directory
+
+Active Directory is a core installation in almost any enterprise network. So it just makes sense to create an Active Directory based environment within a Windows virtual environment. Utilizing the [Windows Server Evaluation](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022) edition from Microsoft, I can create easy to spin up Virtual Machines for labs.
+
+This process of learning can allow me to truly feel and understand what systems I may come across in my professional career.
+
+#### Labs
+
+As previously stated, labs are required for learning purposes, especially when considering advanced certification training such as TCM Security's course catalog.
+
+Labs from TCM Security's courses such as [PEH](https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course) utilize this labs' exact configurations. Allowing me to easily integrate hands-on courses into my environment!
+
+**Resource Info for a typical Windows VM:**
+
+- 32GB Host Storage, ide0
+- 4096 GB Ram
+- 4 CPU Cores, x86-64-v2-AES
+- Utilize the [VirtIO](https://pve.proxmox.com/wiki/Windows_VirtIO_Drivers) Drivers
+
+## Linux Servers and Services
+
+---
+
+### Local Linux Repository
+
+[Link to post](https://pepsec.com/posts/repository-server/)
+
+One of core functions of a network is the updating and patching process. This process is critical when it comes to the functionality of a network stack, the prevention of cybersecurity events, and (don’t forget) the compliance portion.
+
+The main way I manage auto updating and patching in my Proxmox Server Environment is through well-known software such as:
+
+- Apt Mirror
+- Unattended Upgrades
+- Nginx
+- Crontab
+
+In my post linked above, I went far more in-depth. So go check it out if you'd like!
 
 ### Cloudflared Tunnels
 
@@ -69,7 +115,7 @@ You may be thinking that my environment can be easily hacked due to it's open na
 
 Just as an On-Prem Hypervisor Engineer would configure Proxmox (locally), I can mitigate this crutch and access the same console through my domain anywhere!
 
-Website to access my Proxmox Environent: px.< >.cf
+Website to access my Proxmox Environment: px.< >.cf
 ![proxmoxdashboard](https://raw.githubusercontent.com/linpep/blog-portfolio-images/main/proxmoxdashboard.png)
 
 #### SSH Kali Tunnel
@@ -79,7 +125,7 @@ Utilizing a specially configured Cloudflare tunnel, I am able to render an SSH s
 Website to access my Kali Tunnel: kali.< >.cf
 ![sshkali](https://raw.githubusercontent.com/linpep/blog-portfolio-images/f27f8c23155561bbba820b80d3c1517c3e2bdfce/sshkali.png)
 
-### OpenVPN Server/ Containers
+### OpenVPN
 
 When it comes to establishing a direct and private connection to my home network, a VPN is there to solve that issue. With that, I also can't rely on a direct tunnel connection to many of my solutions, especially when considering SMB incompatibilities with Cloudflare Tunnels. So at the end of the day my pick in a VPN Solution: OpenVPN!
 
@@ -87,7 +133,7 @@ There are many forms of documentation out there assisting with the installation 
 
 This process brought me great success, especially after configuring simple router/firewall rules to allow communication with clients and my server.
 
-#### VPN for Friends
+**VPN for Friends!**
 
 With my solution being in a container it meant I could easily replicate it, and I did just that.
 
@@ -95,26 +141,26 @@ Temporarily, my friends needed a working VPN for school as my district had been 
 
 The solution worked well and allowed some of my classmates to collaborate with some networking projects hosted on my Proxmox Virtual Environment as well!
 
-### TrueNAS File Sharing
+### TrueNAS
 
-Thinking of a Network Attached Storage solution was pretty simple. TrueNAS (formerly FreeNAS) was simply the best and easiest solution to implement in my environment. Their open-source and highly documentated nature made it a great first project.
+Thinking of a Network Attached Storage solution was pretty simple. TrueNAS (formerly FreeNAS) was simply the best and easiest solution to implement in my environment. Their open-source and highly documented nature made it a great first project.
 
 Videos from [Lawrence Systems](https://www.youtube.com/@LAWRENCESYSTEMS) proved to be infinitely helpful in the journey through TrueNAS administration/ configuration. However, choosing the correct NAS Operating System within the TrueNAS platform had to be made.
 
-There are multiple verison of TrueNAS such as [Truenas Scale](https://www.truenas.com/truenas-scale/), and [TrueNAS Enterprise](https://www.truenas.com/truenas-enterprise/). I have worked with Scale in the past especially when testing it in our Cybersecurity Program's [Environment](https://pepsec.com/posts/senior-network/). But to be specific, I utilized [TrueNAS Core](https://www.truenas.com/download-truenas-core/) for my primary Operating System hosted on my Proxmox Hypervisor.
+There are multiple version of TrueNAS such as [Truenas Scale](https://www.truenas.com/truenas-scale/), and [TrueNAS Enterprise](https://www.truenas.com/truenas-enterprise/). I have worked with Scale in the past especially when testing it in our Cybersecurity Program's [Environment](https://pepsec.com/posts/senior-network/). But to be specific, I utilized [TrueNAS Core](https://www.truenas.com/download-truenas-core/) for my primary Operating System hosted on my Proxmox Hypervisor.
 
-**Virtual Machine Specifications:**
+#### **Specifications**
 
 - 2 CPU Cores, x86-64-v2-AES
 - 16GB RAM
 - 32G Host OS Storage, scsi0
 - 2TB Attached Hard Drive Storage, scsi1
 
-#### SMB Sharing
+#### **SMB Sharing**
 
 I primarily use the SMB share service in my TrueNAS environment due to it's ease of use and decent reliability. Also utilizing SMB for my Proxmox ISO storage in the process, which allows expandability in my environment.
 
-**Configured SMB Shares:**
+**Configured SMB Shares**
 
 - MP4, MOV, Movie Vault
 - Critical File Backups
@@ -136,33 +182,6 @@ I use this feature especially when designing my Active Directory Environment - a
 
 Another use of linux is a simple way to create, host, and expand game server for personal use or even use for friends! These game servers offered 24/7 reliability and very good performance (possibly due to linux :p)
 
-### Windows Virtual Environment
-
-Creating a Windows virtual environment was quite a difficult process in my experience. Numerous times I faced some incompatabilities, software instabilities, and more throughout the implementation period. But support for such problems was thankfully abundant!
-
-However when diving into the Windows system itself, it is common knowledge just how many vulnerable vectors there are on such a system. But, it is these vulnerabilites and known technologies that Windows utilizes that should encourage anyone to create a Windows-based Virtual Network.
-
-Some critical Windows-based services and solutions I often am learning include Active Directory, Kerberos, RPC, Windows Remote Managementm, etc.
-
-#### Active Directory
-
-Active Directory is a core installation in almost any enterprise network. So it just makes sense to create an Active Directory based environment within a Windows virtual environment. Utilizing the [Windows Server Evaluation](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022) edition from Microsoft, I can create easy to spin up Virtual Machines for labs.
-
-This process of learning can allow me to truly feel and understand what systems I may come across in my professional career.
-
-#### Labs
-
-As previously stated, labs are required for learning purposes, especially when considering advanced certification training such as TCM Security's course catalog.
-
-Labs from TCM Security's courses such as [PEH](https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course) utilize this labs' exact configurations. Allowing me to easily integrate hands-on courses into my environment!
-
-**Resource Info for a typical Windows VM:**
-
-- 32GB Host Storage, ide0
-- 4096 GB Ram
-- 4 CPU Cores, x86-64-v2-AES
-- Utilize the [VirtIO](https://pve.proxmox.com/wiki/Windows_VirtIO_Drivers) Drivers
-
 ### Splunk SIEM Environment
 
 [Splunk](https://www.splunk.com) is a technology often used as a SIEM environment and is utilized by Cybersecurity Analysts. The whole idea of a SIEM is just log management and searching. You have an agent installed on an endpoint device and a primary server that hosts your forwarded logs, search engines, indexes, etc.
@@ -179,7 +198,7 @@ Overall, this project/experience will bode well with the many other projects I h
 - Windows Server 2022 Host
 - Kali Linux 2023 Host
 
-#### Splunk Dashboard:
+**Splunk Dashboard:**
 
 ![Splunk](https://raw.githubusercontent.com/linpep/blog-portfolio-images/main/splunk.png)
 
@@ -214,8 +233,9 @@ But taking hardware upgrades into account, many expansions could be implemented 
 - Proxmox CEPH + HA implementations
 - 3 Node Proxmox Hypervisor Cluster
 - Malware Analysis Station (Not included into Proxmox)
-- Guacamole On-Prem implemenation
+- Guacamole On-Prem implementation
 - Home-made practical File Integrity Monitor
 - On-Prem Media Server
 - Expansion on Splunk configuration
 - Implementation of RAID + 3-2-1 Backup Solution
+- Practical Ansible Setup and Utilization
