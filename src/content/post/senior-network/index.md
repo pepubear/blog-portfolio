@@ -7,18 +7,18 @@ tags: ["networking", "linux", "proxmox", "active directory"]
 
 During this past junior year, I was given a great opportunity to start the framework and evaluation of the soon-to-be senior network with a fellow classmate. I've always wanted to do hands-on networking projects, beginning with my Proxmox home lab environment. However, with this project, we can implement a solution that teaches both my partner and me the inner workings of a real, small/medium-sized business' internal network.
 
-Our program has always needed an improved network, especially during our Cyberpatriot XV competition. The file transfer speed was extremely slow and it was apparent the program was in need of an upgrade, but we needed knowledgable engineers to do so. As a result, My partner and I stepped in for that role!
+Our program has always needed an improved network, especially during our Cyberpatriot XV competition. The file transfer speed was extremely slow and it was apparent the program was in need of an upgrade, but we needed knowledgeable engineers to do so. As a result, My partner and I stepped in for that role!
 
-After testing our solutions, we were able to improve network speeds, productivity, and learning throughputs by a tremendous amount. Our solution was a huge success in the program and received wonderful acclaim from students and our teacher!
+After testing our solutions, we were able to improve network speeds, productivity, and learning throughput by a tremendous amount. Our solution was a huge success in the program and received wonderful acclaim from students and our teacher!
 
-PS: In this blog I will not discuss much about the specfic devices in our network, mostly just solution/ network architecture.
+PS: In this blog I will not discuss much about the specific devices in our network, mostly just solution/ network architecture.
 
-Some of the software we used to troubleshoot and pen-test include:
+Some of the software we used to troubleshoot, and pen-test include:
 
 - Iperf3, certifying network speeds and transmissions
 - Nmap, verifying open/ closed ports
 - Nessus, detailed scans for our solutions
-- Kerbrute, Active Directory kerberos enumeration and testing
+- Kerbrute, Active Directory Kerberos enumeration and testing
 - Enum4Linux, enumerating SMB information for our NAS solution
 - Wireshark, discovering device broadcasts and verifying IP address/ DNS queries and requests
 
@@ -32,11 +32,11 @@ To create an efficient backbone for our network, we needed a manageable and easi
 
 Our Proxmox Environment was installed on 3 Enterprise Servers, and 2 Dell OptiPlex 7070s (for the extra power). With our installations clustered together and Linux PAM users established, we could now easily manage and monitor our environment from anywhere on our school's local network.
 
-Creating and designing specialized Virtual Machines and Containers couldn't have been easier and more secure. It was an absolute game changer that, admittedly, got me very excited with the opportunities we had.
+Creating and designing specialized Virtual Machines and Containers couldn't have been easier and more secure. It was an absolute game changer that, admittedly, got me very excited about the opportunities we had.
 
 ### Network Storage Solution, TrueNAS
 
-As, naturally, our program needed an extensive file transfer backbone, TrueNAS was a perfect choice for our environment. Offering top-tier managability, speed, and installation, we just could not pass it up.
+As, naturally, our program needed an extensive file transfer backbone, TrueNAS was a perfect choice for our environment. Offering top-tier manageability, speed, and installation, we just could not pass it up.
 
 Our uses for TrueNAS include:
 
@@ -76,7 +76,7 @@ Our uses for Graylog include:
 
 Due to our limited timeframe, we couldn't implement all of the solutions we wanted to, so we're saving some of these for the next, and last year in our Cybersecurity program. With my specially crafted schedule, I'll finally have enough time to develop many more solutions, learning materials, and labs for our program.
 
-Students need to learn with lab environments, and our network allows that! The only catch is the limited people-power. My partner and I are only two people, and we shed blood, sweat, and tears to learn as much as we could with our limited time! With the knowledge we have now, I am hoping we can get more student engineers to help us and create new ideas for the program.
+Students need to learn with lab environments, and our network allows that! The only catch is the limited peoplepower. My partner and I are only two people, and we shed blood, sweat, and tears to learn as much as we could with our limited time! With the knowledge we have now, I am hoping we can get more student engineers to help us and create new ideas for the program.
 
 Some of the future solutions and labs include:
 
