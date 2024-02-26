@@ -30,11 +30,6 @@ const cactusTech: Array<{ title: string; desc: string; href: string }> = [
 		desc: "Check out my Gits, Repos, Etc.",
 		href: "https://github.com/pepubear",
 	},
-	{
-		title: "tony.iso@proton.me",
-		desc: " Email me Business Ingquiries!",
-		href: "mailto:tony.iso@proton.me",
-	},
 ];
 ---
 
@@ -69,37 +64,42 @@ const cactusTech: Array<{ title: string; desc: string; href: string }> = [
 			<li>- On-Prem Hardware Technical Experience</li>
 			<li>- IT Technical Assistance and Communications</li>
 		</ul>
-	</section>
-	<section aria-label="Blog post list" class="mt-10">
-		<h2 class="title mb-4 text-xl">// Blog Posts</h2>
-		<ul class="space-y-4 sm:space-y-2">
-			{
-				allPostsByDate.map((p) => (
-					<li class="flex flex-col gap-x-2 sm:flex-row">
-						<PostPreview post={p} />
-					</li>
-				))
-			}
-		</ul>
-	</section>
-	<section class="mt-10">
-		<h2 class="title mb-4 text-xl">// Find me on...</h2>
-		<ul class="space-y-4 sm:space-y-2">
-			{
-				cactusTech.map(({ href, title, desc }) => (
-					<li>
-						<a
-							href={href}
-							target="_blank"
-							rel="noopener noreferrer"
-							class="cactus-link inline-block"
-						>
-							{title}
-						</a>
-						:<p class="inline-block sm:mt-2">{desc}</p>
-					</li>
-				))
-			}
-		</ul>
+		<section aria-label="Business Contacts" class="mt-10">
+			<h2 class="title mb-4 text-xl">// Business Contacts</h2>
+			<p class="mb-3">Email: tony.iso@proton.me</p>
+			<p class="mb-3">Phone: 786-743-9605</p>
+		</section>
+		<section <section aria-label="Blog post list" class="mt-10">
+			<h2 class="title mb-4 text-xl">// Blog Posts</h2>
+			<ul class="space-y-4 sm:space-y-2">
+				{
+					allPostsByDate.map((p) => (
+						<li class="flex flex-col gap-x-2 sm:flex-row">
+							<PostPreview post={p} />
+						</li>
+					))
+				}
+			</ul>
+		</section>
+		<section class="mt-10">
+			<h2 class="title mb-4 text-xl">// Find me on...</h2>
+			<ul class="space-y-4 sm:space-y-2">
+				{
+					cactusTech.map(({ href, title, desc }) => (
+						<li>
+							<a
+								href={href}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="cactus-link inline-block"
+							>
+								{title}
+							</a>
+							:<p class="inline-block sm:mt-2">{desc}</p>
+						</li>
+					))
+				}
+			</ul>
+		</section>
 	</section>
 </PageLayout>
