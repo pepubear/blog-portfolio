@@ -284,6 +284,6 @@ sudo systemctl enable nginx
 
 ## Conclusion
 
-That is pretty much the basics of starting a Linux Repositry! Share the Repository with your servers, computers and even friends!
+That is pretty much the basics of starting a Linux Repository! Share the Repository with your servers, computers and even friends!
 
 As with the time I have right now, I may go in to this blog and make some new updates and changes before I ever think of having this blog used in the professional setting. Alot of changes and descriptions would need to be provisioned to allow for a much smoother implementation process!
