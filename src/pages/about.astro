@@ -14,50 +14,69 @@ const meta = {
 	<div class="space-y-6">
 		<h1 class="title">// About me</h1>
 		<p>
-			Hello! I'm <b>Tony</b> and my passion lies in all things computers. In particular, my primary focus of study is in Cybersecurity and all the technologies that are associated with that expansive and diverse field.
+			Hello! I'm <b>Tony</b> and my passion lies in all things computers. In particular, my primary
+			focus of study is in Cybersecurity and all the technologies that are associated with that
+			expansive and diverse field.
 		</p>
 		<p>
-			I've been involved in computers for years, starting in High School when I got my first PC. I saved up about $500 and budgeted for months on the correct parts and configurations that would work with my tight budget. For a 14 year old I gotta give myself some props!		
+			I've been involved in computers for years, starting in High School when I got my first PC. I
+			saved up about $500 and budgeted for months on the correct parts and configurations that would
+			work with my tight budget. For a 14 year old I gotta give myself some props!
 		</p>
 		<p>
-			But going back in time, I was always crafty with technology. I would often be seen using inspect element and some basic forms of "hacking" even as a kid in Elementary and Middle School. Many of these instances always being just to troll teachers and students.
+			But going back in time, I was always crafty with technology. I would often be seen using
+			inspect element and some basic forms of "hacking" even as a kid in Elementary and Middle
+			School. Many of these instances always being just to troll teachers and students.
 		</p>
 		<p>
-			However, in terms of Cybersecurity, I started to become extensively involved and invested in it for an ever-growing
+			However, in terms of Cybersecurity, I started to become extensively involved and invested in
+			it for an ever-growing
 			<b><span id="time2"></span></b>
 			<script>
 				function updateTime2() {
-				const now = new Date();
-				const targetDate = new Date("2022-08-15T20:32:22");
-				const diff1 = now.getTime() - targetDate.getTime();
-				const days1 = Math.floor(diff1 / (1000 * 60 * 60 * 24));
-				const hours1 = Math.floor((diff1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-				const minutes1 = Math.floor((diff1 % (1000 * 60 * 60)) / (1000 * 60));
-				const seconds1 = Math.floor((diff1 % (1000 * 60)) / 1000);
-				document.getElementById("time2").textContent = `${days1} days, ${hours1} hours, ${minutes1} minutes, and ${seconds1} seconds.`;
+					const now = new Date();
+					const targetDate = new Date("2022-08-15T20:32:22");
+					const diff1 = now.getTime() - targetDate.getTime();
+					const days1 = Math.floor(diff1 / (1000 * 60 * 60 * 24));
+					const hours1 = Math.floor((diff1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+					const minutes1 = Math.floor((diff1 % (1000 * 60 * 60)) / (1000 * 60));
+					const seconds1 = Math.floor((diff1 % (1000 * 60)) / 1000);
+					document.getElementById(
+						"time2",
+					).textContent = `${days1} days, ${hours1} hours, ${minutes1} minutes, and ${seconds1} seconds.`;
 				}
 				setInterval(updateTime2, 1000);
 			</script>
-			As this time increases, my experience increases. It's an interesting feeling looking at this timer every so often and seeing it quickly jump up the days as time moves forward!
+			 As this time increases, my experience increases. It's an interesting feeling looking at this
+			timer every so often and seeing it quickly jump up the days as time moves forward!
 		</p>
 		<p>
-			I've also got plenty of educational experienced in Cybersecurity. Specifically, highlighting my roles in my High School Cybersecurity Program.
+			I've also got plenty of educational experienced in Cybersecurity. Specifically, highlighting
+			my roles in my High School Cybersecurity Program, my in-depth Server Administration in my home
+			lab, and my role as a Network Operations Center Analyst.
 		</p>
 		<p>
-			With that out of the way though, simply put, I am an 18 year old with a lot of ideas and plenty of energy to put in the right places. I've got tons of plans to expand my portfolio and career as time goes on!
-		<p>
-			So far I am proud to say I have been extremely successful in my academic pursuit with my Cybersecurity Career!
+			With that out of the way though, simply put, I am an 18 year old with a lot of ideas and
+			plenty of energy to put in the right places. I've got tons of plans to expand my portfolio and
+			career as time goes on!
+			<p>
+				So far I am proud to say I have been extremely successful in my academic pursuit with my
+				Cybersecurity Career!
+			</p>
+			<h2 class="title">// My Science</h2>
+			<p>
+				I use many resources like TryHackMe, HackTheBox, PicoCTF, Custom Lab Environments and many
+				more to retain my technical knowledge in Cybersecurity. And to retain my knowledge in
+				Cybersecurity business, culture, and technology, I often follow many Cybersecurity
+				YouTubers, influencers, articles, and more to keep up with this incredibly quickly advancing
+				field.
+			</p>
+			<p>
+				Keeping connected with peers, professionals and players in the field is also an incredible
+				way I spend my free time. It's amazing how much information I can receive by only asking
+				questions and connecting with people.
+			</p>
+			<div class="flex justify-center"></div>
 		</p>
-		<h2 class="title">// My Science</h2>
-		<p>
-			I use many resources like TryHackMe, HackTheBox, PicoCTF, Custom Lab Environments and many more to retain my technical knowledge in Cybersecurity. 
-			
-			And to retain my knowledge in Cybersecurity business, culture, and technology, I often follow many Cybersecurity YouTubers, influencers, articles, and more to keep up with this incredibly quickly advancing field.
-		</p>
-		<p>
-			Keeping connected with peers, professionals and players in the field is also an incredible way I spend my free time. It's amazing how much information I can receive by only asking questions and connecting with people.
-		</p>
-			<div class="flex justify-center">
-		</div>
 	</div>
 </PageLayout>
